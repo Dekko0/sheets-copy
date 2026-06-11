@@ -1,6 +1,6 @@
 # Configuracao visual e de servidor do Streamlit.
 [theme]
-base = "light"
+base = "dark"
 primaryColor = "#1A73E8"             # Google Blue (paleta corporativa)
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F8F9FA"
