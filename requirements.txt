@@ -1,0 +1,5 @@
+# Dependências de runtime — Sistema de Cópia de Abas Excel
+# Versões fixadas (pinned) para reprodutibilidade.
+# Instale com: pip install -r requirements.txt
+streamlit==1.52.2
+openpyxl==3.1.5

@@ -1,0 +1,11 @@
+# Configuracao visual e de servidor do Streamlit.
+[theme]
+base = "light"
+primaryColor = "#1A73E8"             # Google Blue (paleta corporativa)
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F9FA"
+textColor = "#202124"
+font = "sans serif"
+
+[server]
+maxUploadSize = 200                  # MB — suporta planilhas grandes

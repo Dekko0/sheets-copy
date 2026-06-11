@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Sistema operacional / IDE
+.DS_Store
+Thumbs.db
+.idea/
+
+# Saídas geradas pela aplicação
+*_atualizado_*.xlsx
+*_atualizado_*.xlsm
