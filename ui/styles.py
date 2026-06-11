@@ -16,19 +16,22 @@ _HEAD = """
 
 _CSS = """
 <style>
+/* Paleta Material *dark*. Os papeis dos tokens neutros sao mantidos:
+   --neutral-900 = texto primario, --neutral-100 = realce sutil. Em modo
+   escuro esses valores se invertem (texto claro / superficie escura). */
 :root {
     --primary:       #1A73E8;
     --primary-dark:  #1557B0;
-    --primary-light: #E8F0FE;
-    --success:       #1E8E3E;
-    --warning:       #F29900;
-    --danger:        #D93025;
-    --neutral-900:   #202124;
-    --neutral-700:   #5F6368;
-    --neutral-300:   #DADCE0;
-    --neutral-100:   #F8F9FA;
-    --surface:       #FFFFFF;
-    --sidebar-bg:    #F8F9FA;
+    --primary-light: #8AB4F8;   /* azul claro para realces sobre fundo escuro */
+    --success:       #81C995;
+    --warning:       #FDD663;
+    --danger:        #F28B82;
+    --neutral-900:   #E8EAED;   /* texto primario (claro) */
+    --neutral-700:   #9AA0A6;   /* texto secundario / muted */
+    --neutral-300:   #3C4043;   /* bordas e divisores */
+    --neutral-100:   #303134;   /* realce sutil / hover */
+    --surface:       #2D2E31;   /* superficie elevada (cards, linhas) */
+    --sidebar-bg:    #28292B;
 }
 
 /* ── Fonte global ── */
@@ -79,11 +82,11 @@ html, body, [class*="css"], .stMarkdown, .stButton, .stTextInput, .stSelectbox {
     display: inline-flex; align-items: center; gap: 4px;
     padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 500;
 }
-.badge-success { background:#E6F4EA; color:#1E8E3E; }
-.badge-warning { background:#FEF7E0; color:#F29900; }
-.badge-error   { background:#FCE8E6; color:#D93025; }
-.badge-info    { background:#E8F0FE; color:#1A73E8; }
-.badge-neutral { background:#F1F3F4; color:#5F6368; }
+.badge-success { background:#1E3A28; color:#81C995; }
+.badge-warning { background:#3D3420; color:#FDD663; }
+.badge-error   { background:#3D2422; color:#F28B82; }
+.badge-info    { background:#1F3A5F; color:#8AB4F8; }
+.badge-neutral { background:#303134; color:#9AA0A6; }
 
 /* ── Linhas de aba ── */
 .sheet-row {
@@ -97,7 +100,7 @@ html, body, [class*="css"], .stMarkdown, .stButton, .stTextInput, .stSelectbox {
 
 /* ── Botão de download (verde sucesso) ── */
 [data-testid="stDownloadButton"] button {
-    background-color: var(--success) !important;
+    background-color: #1E8E3E !important;
     color: #fff !important; border: none !important; border-radius: 4px;
     font-family: 'Google Sans', sans-serif; font-weight: 500;
 }

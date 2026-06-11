@@ -18,7 +18,7 @@ from core.sheet_copier import CopyReport
 from core.sheet_inspector import SheetMetadata
 
 PRIMARY = "#1A73E8"
-MUTED = "#5F6368"
+MUTED = "#9AA0A6"
 
 
 # --------------------------------------------------------------------------- #

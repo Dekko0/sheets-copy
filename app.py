@@ -52,7 +52,7 @@ _XLSX_MIME = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 _XLSM_MIME = "application/vnd.ms-excel.sheet.macroEnabled.12"
 _UPLOAD_TYPES = [ext.lstrip(".") for ext in ALLOWED_EXTENSIONS]
 _PRIMARY = "#1A73E8"
-_MUTED = "#5F6368"
+_MUTED = "#9AA0A6"
 
 st.set_page_config(
     page_title="Sheet Copier",
@@ -104,7 +104,7 @@ app_header()
 with st.sidebar:
     st.markdown(
         f'{icon("layers", "18px", _PRIMARY)}'
-        f'<b style="font-size:14px;color:#202124;">Sheet Copier</b>'
+        f'<b style="font-size:14px;color:#E8EAED;">Sheet Copier</b>'
         f'<span style="font-size:12px;color:{_MUTED};"> &nbsp;v{APP_VERSION}</span>',
         unsafe_allow_html=True,
     )
